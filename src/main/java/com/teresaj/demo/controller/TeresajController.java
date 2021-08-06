@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TeresajController {
     @GetMapping("/hello")
     public String test() {
-        return "Hello Docker 123!!!";
+        return "Hello Docker!! && Devops ~~~";
     }
 }
