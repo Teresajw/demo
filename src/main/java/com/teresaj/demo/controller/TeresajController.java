@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class TeresajController {
     @GetMapping("/hello")
     public String test() {
-        return "Hello Docker ~";
+        return "Hello Docker 2021.8.6！！！";
     }
 }
