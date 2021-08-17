@@ -15,15 +15,13 @@ public class TeresajController {
         return "Hello Docker!! && Devops ~~~";
     }
 
-    @GetMapping("/getUserInfo")
+    @GetMapping("/getUserList")
     @ResponseBody
     public List<User> test1() {
         List<User> list = new ArrayList<>();
-
         list.add(new User("张三", 23));
         list.add(new User("李四", 22));
         list.add(new User("王五", 25));
-
         return list;
     }
 }
