@@ -5,14 +5,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
 public class TeresajController {
     @GetMapping("/hello")
     public String test() {
-        return "Hello Docker!! && Devops ~~~";
+        return "Hello Docker!! && Devops ~~~"+new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss").format(new Date());
     }
 
     @GetMapping("/getUserList")
